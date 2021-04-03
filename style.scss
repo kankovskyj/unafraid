@@ -1,0 +1,129 @@
+$heading: 'Dela Gothic One', cursive;
+$text: 'Montserrat', sans-serif;
+$yellow: #F0BE16;
+$background-color: #0d0d0d;
+$black: #0000;
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $yellow;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $background-color;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $black;
+  }
+
+body {
+    background: $background-color;
+    font-family: $text;
+}
+.header {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    .logo {
+    }
+    .menu-button {
+        cursor: pointer;
+    }
+}
+.jumbotron {
+    width: 50%;
+    margin: auto;
+    h1 {
+        font-size: 46px;
+        letter-spacing: 3px;
+        position: absolute;
+        z-index: 5;
+        left: 30%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $heading;
+        color: $yellow;
+        cursor: pointer;
+        transform: skewY(14deg);
+        transform: skewX(10deg);
+    }
+    .port-image {
+        margin: auto;
+        width: 330px;
+        height: 440px;
+        background-image: url(images/borderjumbo.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-bottom: 50px;
+        cursor: pointer;
+    }
+    .port-image::after {
+        display: block;
+        content: "";
+        cursor: pointer;
+        filter: grayscale(100%);
+        background-image: url(images/imgaiko.JPG);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        clip-path: polygon(3% 1%, 98% 7%, 93% 94%, 7% 98%);
+        width: 330px;
+        height: 440px;
+        margin-left: -15px;
+        margin-top: -15px;
+    }
+}
+.footer {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        cursor: pointer;
+    }
+    .footer-text {
+        text-align: right;
+        font-family: $heading;
+        text-transform: uppercase;
+        color: $yellow;
+        display: flex;
+        flex-direction: column;
+        span:nth-of-type(1) {
+            font-size: 31.5px;
+            line-height: 31.5px;
+            display: none;
+        }
+        span:nth-of-type(2) {
+            font-size: 19.2px;
+            line-height: 19.2px;
+        }
+        span:nth-of-type(3) {
+            font-size: 12.5px;
+            line-height: 12.5px;
+        }
+        span:nth-of-type(4) {
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+}
+.about {
+    margin-top: 15vh;
+}

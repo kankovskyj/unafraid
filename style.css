@@ -1,0 +1,158 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F0BE16;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0d0d0d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0000;
+}
+
+body {
+  background: #0d0d0d;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .menu-button {
+  cursor: pointer;
+}
+
+.jumbotron {
+  width: 50%;
+  margin: auto;
+}
+
+.jumbotron h1 {
+  font-size: 46px;
+  letter-spacing: 3px;
+  position: absolute;
+  z-index: 5;
+  left: 30%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Dela Gothic One", cursive;
+  color: #F0BE16;
+  cursor: pointer;
+  -webkit-transform: skewY(14deg);
+          transform: skewY(14deg);
+  -webkit-transform: skewX(10deg);
+          transform: skewX(10deg);
+}
+
+.jumbotron .port-image {
+  margin: auto;
+  width: 330px;
+  height: 440px;
+  background-image: url(images/borderjumbo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+
+.jumbotron .port-image::after {
+  display: block;
+  content: "";
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  background-image: url(images/imgaiko.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(3% 1%, 98% 7%, 93% 94%, 7% 98%);
+          clip-path: polygon(3% 1%, 98% 7%, 93% 94%, 7% 98%);
+  width: 330px;
+  height: 440px;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer img {
+  cursor: pointer;
+}
+
+.footer .footer-text {
+  text-align: right;
+  font-family: "Dela Gothic One", cursive;
+  text-transform: uppercase;
+  color: #F0BE16;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer-text span:nth-of-type(1) {
+  font-size: 31.5px;
+  line-height: 31.5px;
+  display: none;
+}
+
+.footer .footer-text span:nth-of-type(2) {
+  font-size: 19.2px;
+  line-height: 19.2px;
+}
+
+.footer .footer-text span:nth-of-type(3) {
+  font-size: 12.5px;
+  line-height: 12.5px;
+}
+
+.footer .footer-text span:nth-of-type(4) {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.about {
+  margin-top: 15vh;
+}
+/*# sourceMappingURL=style.css.map */
