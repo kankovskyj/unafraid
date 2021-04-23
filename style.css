@@ -10,16 +10,16 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0d0d0d;
+  background: #0f0f0f;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0000;
+  background: #000000;
 }
 
 body {
-  background: #0d0d0d;
+  background: #0f0f0f;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -154,5 +154,31 @@ body {
 
 .about {
   margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18rem;
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  color: #F0BE16;
+}
+
+.about .heading {
+  position: absolute;
+}
+
+.about .heading h2 {
+  position: relative;
+  font-size: 46px;
+  font-family: "Dela Gothic One", cursive;
+}
+
+.about .heading .heading-background {
+  position: relative;
+  width: 25rem;
+  height: 5rem;
+  background-color: red;
+  -webkit-clip-path: polygon(0 13%, 100% 23%, 89% 65%, 8% 63%);
+          clip-path: polygon(0 13%, 100% 23%, 89% 65%, 8% 63%);
 }
 /*# sourceMappingURL=style.css.map */
